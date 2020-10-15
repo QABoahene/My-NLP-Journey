@@ -6,6 +6,22 @@ In this project, I used the Google Cloud Language Python API to perform sentimen
 The idea was to practice codes for the above tasks  and also get to see how the outputs of the tasks above can summarize the debate.  
 The data is a transcript of the debate from Kaggle (https://www.kaggle.com/gpreda/usa-presidential-debate-2020)
 
+### Tasks/Techniques
+* Entity Analysis
+
+* Sentiment Analysis
+
+### Technologies used
+* Pandas
+
+* Google Cloud Language Python API
+
+* Plotly
+
+* WordCloud
+
+* Matplotlib
+
 ## Sentiment Analysis
 From the sentiment analysis on the document, the debate was flagged as **negative** (see below).
 
