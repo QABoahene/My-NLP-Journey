@@ -6,7 +6,7 @@ So I had an idea, how about analysing the lyrics of each song on his albums and 
 
 The idea is to pick an artist with an 'ok' amount of albums and have songs that were diverse enough to run experiments on. I ended up with [Jon Bellion](http://www.jonbellion.com/). I am a huge fan so this is still good for me.
 
-[Jon Bellion's Picture](https://static.billboard.com/files/media/02-jon-bellion-press-2020-cr-Dexter-Findley-billboard-1548-compressed.jpg)
+![Jon Bellion's Picture](https://static.billboard.com/files/media/02-jon-bellion-press-2020-cr-Dexter-Findley-billboard-1548-compressed.jpg)
 
 ## Questions
 How has the lyrical content and context changed over time in an artist's discography? What can this say about the *context maturity** of their discography?
