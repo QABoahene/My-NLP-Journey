@@ -43,13 +43,3 @@ Use Empath model on it.
 Topic Modelling.
 
 Try my hands on summarisation.
-
-Write article about this.
-
-- Address nature of music and lyrics(metaphors and other literary devices)
-- The process
-- Domain knowledge of maturity evaluation
-- The process (NLP for beginners)
-- Results with domain knowledge
-
-Create medium account or Toward Data Science and post article.
