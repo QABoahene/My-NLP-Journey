@@ -42,4 +42,22 @@ Use Empath model on it.
 
 Topic Modelling.
 
-Try my hands on summarisation.
+## Data Gathering
+When gathering the data for the albums on genius, I first used *Beautiful Soup,* this presented an issue of not being able to scrape every song using URLs of albums and looping through them. Another attempt at researching helped me find a Genius API. This made things easier and once again as a somewhat beginner programmer, I was mad at my silly attempts before this discovery. 
+
+I will be taking you through getting a new client API from Genius. 
+
+First visit [https://genius.com/api-clients/new](https://genius.com/api-clients/new), Enter the name of the app, the icon url of your app if available (this is optional) and then enter the app website url, in this case I used my GitHub link ([https://github.com/QABoahene](https://github.com/QABoahene)) because that's where this project is.
+
+![genius API Picture](https://github.com/QABoahene/My-NLP-Journey/blob/main/Context%20Maturity%20(NLP)/images/New%20API%20Client%20Image.png)
+
+You can read the documentation about the resources needed to carry out tasks you need [here](https://docs.genius.com/). Luckily, there is a package created in python which can help with the first tasks we need to perform for this project which is the data gathering. The package is called *lyricsgenius.*
+
+## Data Cleaning
+Fortunately for me, this data looks mostly clean in terms of spelling mistakes and grammar. The source of the  data works on crowd-sourcing in terms of getting the right lyrics for songs. Cleaning the data is pretty simple and follows the usual process to clean the lyrics to be ready for exploratory data analysis but, there's a catch.
+
+The usual processes for cleaning the lyrics were lemmatisation, removing stop words, removing punctuations and numbers. In the code below, I start by getting rid of all the lines of text that has an item in a square bracket. This is usually the name of the artists or the verse numbers or choruses. This is followed by processes like making the texts lowercases, splitting and lemmatising the words, removing punctuations and removing stop words which doesn't end there. In the lyrics, there are numeric values and at the moment, numbers will not contribute greatly to any insights I'm trying to draw so there is a line of code to take that out. After this, there were some words that still had apostrophes and other punctuations so I manually found them and took them out. You can achieve all this by using the re and nltk packages.
+
+Here's the tricky part, although the output of this was great and looking at the data, the texts seemed clean but there were still some words that made it into the output that I deemed unnecessary, in other words, because of the type of literature of this data, there are bound to be some words that carry almost no meaning and will only make our data a bit unclean to work with. In music, you'll often see these words in the lyrics because of the nature of the diction and also how the artist end up harmonising or the nature of their ad-libs. I manually went through to spot some or most of these words and removed them from the corpus. Some of these words found in Jon Bellion's lyrics are: 'yeah', 'bum', 'la', 'da', 'ba', 'oh', 'ohh', 'ooh', 'mama', 'nana', 'yah', 'uh', 'ew', 'dum', 'ho', 'ya', 'nay', 'nan', 'yo', 'nanana', 'uhuh', 'badem', 'buhda', 'dadada', and 'dadum'. ('This makes me dread working on the lyrics from the rap sub-genre; mumble rap.)
+
+Now that these words were removed, the data looks better and ready to be explored.
